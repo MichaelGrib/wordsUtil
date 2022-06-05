@@ -1,0 +1,19 @@
+.symbol{
+  font-size: 28px;
+  text-transform: capitalize;
+  margin: 4px;
+  padding: 10px;
+  text-align: center;
+  background-color: coral
+}
+.symbol:hover{
+  background-color: rgb(255, 97, 40)
+}
+#addSymb{
+  margin: 18px 0;
+}
+#symContainer{
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
