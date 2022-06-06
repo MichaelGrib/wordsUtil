@@ -1,3 +1,10 @@
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.menu > select, p{
+  margin: 18px 0;
+}
 .symbol{
   font-size: 28px;
   text-transform: capitalize;
@@ -6,8 +13,11 @@
   text-align: center;
   background-color: coral
 }
-.symbol:hover{
-  background-color: rgb(255, 97, 40)
+.s_green{
+  background-color: seagreen
+}
+#copiedArr{
+  padding: 0 20px;
 }
 #addSymb{
   margin: 18px 0;
@@ -15,5 +25,5 @@
 #symContainer{
   padding: 10px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr
 }
