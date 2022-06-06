@@ -1,4 +1,5 @@
 let wordLength = 4
+    wordBufer = null
 const newSymbol = document.querySelector("#addSymb")
       result = document.querySelector("#lastType")
       container = document.querySelector("#symContainer")
@@ -21,6 +22,20 @@ newSymbol.addEventListener("input",(event)=>{
     symbol.addEventListener("click", (event) => {
       if (event.shiftKey) {
         event.target.classList.toggle('s_green')
+      }
+      else if (event.ctrlKey) {
+        if(!wordBufer) {
+          wordBufer = event.target
+          wordBufer.classList.toggle("s_red")
+        }
+        else {
+          let replaced = event.target.textContent
+          event.target.textContent = wordBufer.textContent
+          wordBufer.textContent = replaced
+          wordBufer.classList.toggle("s_red")
+          wordBufer = null
+          countSymbols()
+        }
       }
       else {
         event.target.remove()

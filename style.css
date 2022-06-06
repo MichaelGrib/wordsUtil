@@ -17,6 +17,9 @@
 .s_green{
   background-color: seagreen
 }
+.s_red{
+  background-color: crimson
+}
 #copiedArr{
   padding: 0 20px;
 }
