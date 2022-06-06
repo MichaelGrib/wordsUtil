@@ -1,33 +1,39 @@
 .menu{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-.menu > select, p{
-  margin: 18px 0;
+.menu > p{
+  margin: auto 0 auto 20px;
 }
 .symbol{
   user-select: none;
   font-size: 28px;
   text-transform: capitalize;
-  margin: 4px;
-  padding: 10px;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: calc(50% - 41px) 0;
+  border-radius: 20px;
   text-align: center;
-  background-color: coral
+  background-color: #EAF205
 }
 .s_green{
-  background-color: seagreen
+  background-color: #A173BF
 }
 .s_red{
-  background-color: crimson
+  background-color: #F25244
 }
 #copiedArr{
   padding: 0 20px;
 }
 #addSymb{
-  margin: 18px 0;
+  margin: 0 18px 0;
 }
 #symContainer{
-  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: 1fr 1fr;
 }
